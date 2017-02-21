@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MultiPlatformFramework'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of MultiPlatformFramework.'
+  s.summary          = 'Multi-platform framework for Apple devices.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,20 +18,24 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+                        An iOS, watchOS and tvOS framework. Should be a handy starting point for your multi-platform gam...apps. I meant apps.
 
   s.homepage         = 'https://github.com/miguelcampiao/MultiPlatformFramework'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'miguelcampiao' => 'miguel.campiao@gmail.com' }
   s.source           = { :git => 'https://github.com/miguelcampiao/MultiPlatformFramework.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/miguelcampiao
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.2'
+  s.watchos.deployment_target = '3.1'
+  s.tvos.deployment_target = '10.1'
 
   s.source_files = 'MultiPlatformFramework/Classes/**/*'
-  
+  s.frameworks = 'Foundation'
+  s.dependency 'RealmSwift'
+  s.source_files = 'MultiPlatformFramework/Classes/*.{swift}'
+
   # s.resource_bundles = {
   #   'MultiPlatformFramework' => ['MultiPlatformFramework/Assets/*.png']
   # }
