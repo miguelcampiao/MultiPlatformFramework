@@ -1,8 +1,8 @@
 {
   "name": "MultiPlatformFramework",
   "version": "0.1.0",
-  "summary": "A short description of MultiPlatformFramework.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "Multi-platform framework for Apple devices.",
+  "description": "An iOS, watchOS and tvOS framework. Should be a handy starting point for your multi-platform gam...apps. I meant apps.",
   "homepage": "https://github.com/miguelcampiao/MultiPlatformFramework",
   "license": {
     "type": "MIT",
@@ -15,8 +15,17 @@
     "git": "https://github.com/miguelcampiao/MultiPlatformFramework.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://twitter.com/miguelcampiao",
   "platforms": {
-    "ios": "10.0"
+    "ios": "10.2",
+    "watchos": "3.1",
+    "tvos": "10.1"
   },
-  "source_files": "MultiPlatformFramework/Classes/**/*"
+  "source_files": "MultiPlatformFramework/Classes/*.{swift}",
+  "frameworks": "Foundation",
+  "dependencies": {
+    "RealmSwift": [
+
+    ]
+  }
 }
