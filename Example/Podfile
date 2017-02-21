@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MultiPlatformFramework_Example' do
+  pod 'MultiPlatformFramework', :path => '../'
+
+  target 'MultiPlatformFramework_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
