@@ -175,7 +175,7 @@
 		D41B1ECAAC862C52195BBC87DE932356 /* RLMObservation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E8601ED882DA71D8B18FBA86AE34DBA /* RLMObservation.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"2.4.3\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		D8954CDDE37A2E90DCD1B89BBE6A4B46 /* RLMConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CD736D10802939FA71E0C926367DB5 /* RLMConstants.m */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"2.4.3\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		D8D124B7DE467C54354AB6E26D947642 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A607A0C9772D1FD69F8F0CAE2E1BB1A7 /* Realm.swift */; };
-		D94CD5816672BB472F538B2B4BA5DD71 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EC7E1D953B8C6A2D422CB34E648B96 /* Address.swift */; };
+		D94CD5816672BB472F538B2B4BA5DD71 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EC7E1D953B8C6A2D422CB34E648B96 /* Venue.swift */; };
 		D9F1753F513133169608023A3A02EE25 /* RLMSyncUser.mm in Sources */ = {isa = PBXBuildFile; fileRef = E1DA283FB577C6913F50C2D7E6623009 /* RLMSyncUser.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"2.4.3\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		DACA8237061D7175CCA14CC885E1410B /* RLMCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 52A640F55F1E441661EE0D0CBD273BFA /* RLMCollection.h */; };
 		DBC9CB5D21DE13B7A4433275414AE177 /* RLMProperty_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B3512DBCFA8CA65120DBAC1A9D61B94 /* RLMProperty_Private.h */; };
@@ -484,7 +484,7 @@
 		E1DA283FB577C6913F50C2D7E6623009 /* RLMSyncUser.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMSyncUser.mm; path = Realm/RLMSyncUser.mm; sourceTree = "<group>"; };
 		E2543EF3320C948525BB6741D2459CA4 /* SortDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SortDescriptor.swift; path = RealmSwift/SortDescriptor.swift; sourceTree = "<group>"; };
 		E2D7339D90C5877D170416055D59B95E /* Pods_MultiPlatformFramework_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiPlatformFramework_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6EC7E1D953B8C6A2D422CB34E648B96 /* Address.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		E6EC7E1D953B8C6A2D422CB34E648B96 /* Venue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		E7650831B6142C78BB7A98630229D06E /* SwiftVersion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftVersion.swift; path = RealmSwift/SwiftVersion.swift; sourceTree = "<group>"; };
 		EA90F95E6CB405352AB5A2C90B29158F /* NSError+RLMSync.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+RLMSync.m"; path = "Realm/NSError+RLMSync.m"; sourceTree = "<group>"; };
 		ECC2C93B754FBE7BD065DD9268406E33 /* Pods-MultiPlatformFramework_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MultiPlatformFramework_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -584,7 +584,7 @@
 			isa = PBXGroup;
 			children = (
 				FE1A7EC5510A6EE6BACEC2839EA41102 /* Person.swift */,
-				E6EC7E1D953B8C6A2D422CB34E648B96 /* Address.swift */,
+				E6EC7E1D953B8C6A2D422CB34E648B96 /* Venue.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1231,7 +1231,7 @@
 			files = (
 				59175EADF9D8A0BBECBD67928BE04C49 /* MultiPlatformFramework-dummy.m in Sources */,
 				5884F5C4CAE5F3BF247FB96B2288D1A9 /* Person.swift in Sources */,
-				D94CD5816672BB472F538B2B4BA5DD71 /* Address.swift in Sources */,
+				D94CD5816672BB472F538B2B4BA5DD71 /* Venue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
