@@ -1,19 +1,23 @@
-use_frameworks!
+Pod::Spec.new do |s|
+  s.name             = 'MultiPlatformFramework'
+  s.version          = '0.1.0'
+  s.summary          = 'An iOS, watchOS and tvOS framework'
+  s.description      = <<-DESC
+                        An iOS, watchOS and tvOS framework
+                       DESC
 
-target 'MultiPlatformFramework_Example' do
-  pod 'MultiPlatformFramework', :path => '../'
-  pod 'RealmSwift'
+  s.homepage         = 'https://github.com/miguelcampiao/MultiPlatformFramework'
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'Miguel Campião' => 'miguel.campiao@gmail.com' }
+  s.source           = { :git => 'https://github.com/miguelcampiao/MultiPlatformFramework.git', :tag => s.version.to_s }
 
-  target 'MultiPlatformFramework_Tests' do
-    inherit! :search_paths
+  s.ios.deployment_target = '10.2'
+  s.watchos.deployment_target = '3.1'
+  s.tvos.deployment_target = '10.1'
 
-    post_install do |installer|
-        installer.pods_project.targets.each do |target|
-            target.build_configurations.each do |config|
-                config.build_settings['SWIFT_VERSION'] = '3.0'
-            end
-        end
-    end
+  s.source_files = 'MultiPlatformFramework/Classes/**/*'
+  s.frameworks = 'Foundation'
+  s.dependency 'RealmSwift'
+  s.source_files = 'MultiPlatformFramework/Classes/*.{swift}'
 
-  end
 end
